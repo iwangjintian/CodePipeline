@@ -1,0 +1,8 @@
+{
+  "Parameters" : {
+    "HashKeyElementName" : "name",
+    "HashKeyElementType" : "S",
+    "ReadCapacityUnits" : "5",
+    "WriteCapacityUnits" : "10"
+  }
+}
