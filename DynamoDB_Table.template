@@ -49,9 +49,13 @@
         "AttributeDefinitions": [ { 
           "AttributeName" : {"Ref" : "HashKeyElementName"},
           "AttributeType" : {"Ref" : "HashKeyElementType"}
+        }, { 
+          "AttributeName" : "added_col",
+          "AttributeType" : "S"
         } ],
         "KeySchema": [
-          { "AttributeName": {"Ref" : "HashKeyElementName"}, "KeyType": "HASH" }
+          { "AttributeName": {"Ref" : "HashKeyElementName"}, "KeyType": "HASH" }, 
+          { "AttributeName": "added_col", "KeyType": "RANGE" }
         ],
         "ProvisionedThroughput" : {
           "ReadCapacityUnits" : {"Ref" : "ReadCapacityUnits"},
