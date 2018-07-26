@@ -46,6 +46,7 @@
     "myDynamoDBTable" : {
       "Type" : "AWS::DynamoDB::Table",
       "Properties" : {
+        "TableName" : "JesseTest"，
         "AttributeDefinitions": [ { 
           "AttributeName" : {"Ref" : "HashKeyElementName"},
           "AttributeType" : {"Ref" : "HashKeyElementType"}
