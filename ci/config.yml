@@ -1,0 +1,9 @@
+global:
+  regions:
+    - us-east-1
+tests:
+  defaults:
+    regions:
+      - us-east-1
+    parameter_input: dynamoTable.json
+    template_file: DynamoDB_Table.template
